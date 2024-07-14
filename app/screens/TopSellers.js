@@ -2,7 +2,7 @@ export default [
   {
     id: 800,
     name: "JUVENTUS 23/24 THIRD HIT",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -12,7 +12,7 @@ export default [
   {
     id: 801,
     name: "REAL MADRID TRAINING KIT",
-    price: "780000",
+    price: 780000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -22,7 +22,7 @@ export default [
   {
     id: 802,
     name: "ARSENAL 23/24 AWAY JERSEY",
-    price: "450000",
+    price: 450000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -32,7 +32,7 @@ export default [
   {
     id: 803,
     name: "REAL MADRID 24/25 HOME JERSEY",
-    price: "700000",
+    price: 700000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,

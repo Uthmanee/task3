@@ -10,9 +10,10 @@ import { AntDesign } from "@expo/vector-icons";
 import Cart from "./icon/Cart";
 import CartContext from "../context/cartContext";
 import colors from "../config/colors";
-import FavouriteContext from "../context/FavouriteContext";
-import RowContainer from "./RowContainer";
 import Heart from "./icon/Heart";
+import FavouriteContext from "../context/FavouriteContext";
+import newArrivals from "../data/newArrivals";
+import RowContainer from "./RowContainer";
 
 function JerseyCard({
   item,
@@ -20,6 +21,8 @@ function JerseyCard({
   fullList = false,
   horizontalItem = false,
 }) {
+  console.log(newArrivals[0].price);
+
   const [horizontal, setHorizontal] = useState(false);
 
   const cartCtx = useContext(CartContext);
@@ -36,11 +39,11 @@ function JerseyCard({
   }, []);
 
   const handleToggleCart = () => {
-    cartCtx.toggleCartItem(item);
+    cartCtx.toggleCartItem({ ...item });
   };
 
   const handleToggleLiked = () => {
-    favCtx.toggleFavouriteItem(item);
+    favCtx.toggleFavouriteItem({ ...item });
   };
 
   return (

@@ -12,7 +12,7 @@ function CartItem({ item, data = "" }) {
   const [state, increaseQuantity, decreaseQuantity] = useQuantity(
     {
       price: item.price,
-      quantity: 1,
+      quantity: item.quantity,
     },
     5
   );

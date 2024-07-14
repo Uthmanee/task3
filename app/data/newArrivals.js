@@ -2,7 +2,7 @@ export default [
   {
     id: 700,
     name: "GERMANY 24 AWAY JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -12,7 +12,7 @@ export default [
   {
     id: 701,
     name: "MANCHESTER UNITED 24/25 AWAY JERSEY",
-    price: "500000",
+    price: 250000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -22,7 +22,7 @@ export default [
   {
     id: 702,
     name: "ITALY 24 HOME JERSEY",
-    price: "500000",
+    price: 400000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -32,7 +32,7 @@ export default [
   {
     id: 703,
     name: "REAL MADRID 24/25 AWAY JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -42,7 +42,7 @@ export default [
   {
     id: 704,
     name: "MESSI TRAINING JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -52,7 +52,7 @@ export default [
   {
     id: 705,
     name: "JUVENTUS 23/24 AWAY JERSEY",
-    price: "500000",
+    price: 270000,
     quantity: 1,
     availableQuantity: 5,
     rating: 5,
@@ -62,7 +62,7 @@ export default [
   {
     id: 707,
     name: "ARSENAL 23/24 AWAY JERSEY",
-    price: "500000",
+    price: 200000,
     quantity: 1,
     availableQuantity: 4,
     rating: 5,
@@ -72,7 +72,7 @@ export default [
   {
     id: 706,
     name: "ARSENAL 23/24 HOME JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,

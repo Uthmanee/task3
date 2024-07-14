@@ -2,7 +2,7 @@ export default [
   {
     id: 900,
     name: "REAL MADRID PRE MATCH KIT",
-    price: "300000",
+    price: 300000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -12,7 +12,7 @@ export default [
   {
     id: 901,
     name: "SPAIN 24 AWAY JERSEY",
-    price: "450000",
+    price: 450000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -22,7 +22,7 @@ export default [
   {
     id: 902,
     name: "FC BAYERN 24/25 HOME KIT",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,
@@ -32,7 +32,7 @@ export default [
   {
     id: 903,
     name: "FC BAYERN 23/24 AWAY JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -42,7 +42,7 @@ export default [
   {
     id: 904,
     name: "MANCHESTER UNITED PRE MATCH KIT",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 2,
     rating: 5,
@@ -52,7 +52,7 @@ export default [
   {
     id: 905,
     name: "JUVENTUS 23/24 HOME JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 5,
     rating: 5,
@@ -62,7 +62,7 @@ export default [
   {
     id: 907,
     name: "ARSENAL 23/24 AWAY JERSEY",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 4,
     rating: 5,
@@ -72,7 +72,7 @@ export default [
   {
     id: 906,
     name: "MANCHESTER UNITED 23/24 GOALKEEPER KIT",
-    price: "500000",
+    price: 500000,
     quantity: 1,
     availableQuantity: 3,
     rating: 5,

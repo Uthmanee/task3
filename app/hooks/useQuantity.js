@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 
-const initialState = (food) => ({
-  quantity: +food.quantity,
-  price: +food.price,
+const initialState = (jersey) => ({
+  quantity: +jersey.quantity,
+  price: +jersey.price,
 });
 
 const reducer = (state, action) => {
@@ -31,8 +31,8 @@ const reducer = (state, action) => {
   }
 };
 
-const useQuantity = (food, maxQuantity) => {
-  const [state, dispatch] = useReducer(reducer, food, initialState);
+const useQuantity = (jersey, maxQuantity) => {
+  const [state, dispatch] = useReducer(reducer, jersey, initialState);
 
   const increaseQuantity = () => {
     dispatch({

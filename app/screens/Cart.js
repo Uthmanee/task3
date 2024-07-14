@@ -12,7 +12,6 @@ import CartContext from "../context/cartContext";
 import CartItem from "../components/CartItem";
 import colors from "../config/colors";
 import CouponBox from "../components/CouponBox";
-import jerseys from "../data/jerseys";
 import NavBar from "../components/NavBar";
 import RowContainer from "../components/RowContainer";
 import routes from "../navigation/routes";

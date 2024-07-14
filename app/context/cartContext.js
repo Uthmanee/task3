@@ -24,33 +24,30 @@ export const CartContextProvider = ({ children }) => {
 
   const addToCart = (newItem, from = "") => {
     const existingItem = cart.find((item) => item.id === newItem.id);
-    const basePrice = Number(newItem.price); // Ensure basePrice is a number
-
     if (!existingItem) {
-      newItem.quantity = 1;
-      newItem.price = basePrice; // Ensure price is a number
       setCart((prevCart) => [...prevCart, newItem]);
     } else {
       if (from !== "") {
-        if (from === "cartIncrease") {
-          existingItem.price = Number(existingItem.price) + basePrice;
-          existingItem.quantity += 1;
-        } else {
-          existingItem.price = Number(existingItem.price) - basePrice;
-          existingItem.quantity -= 1;
-        }
-        setTotalPrice(cart.reduce((acc, item) => acc + Number(item.price), 0));
-        setTotalQuantity(cart.reduce((acc, item) => acc + item.quantity, 0));
+        const basePrice = existingItem.price / existingItem.quantity;
+        existingItem.price =
+          from === "cartIncrease"
+            ? existingItem.price + basePrice
+            : existingItem.price - basePrice;
+        existingItem.quantity =
+          from === "cartIncrease"
+            ? existingItem.quantity + 1
+            : existingItem.quantity - 1;
+        setTotalPrice(cart.reduce((acc, item) => acc + item.price, 0));
+        setTotalQuantity((prevQty) =>
+          from === "cartIncrease" ? prevQty + 1 : prevQty - 1
+        );
         return;
       } else {
-        existingItem.quantity += 1;
-        existingItem.price = Number(existingItem.price) + basePrice;
+        const updatedQuantity = existingItem.quantity + newItem.quantity;
+        existingItem.quantity = updatedQuantity;
+        existingItem.price = existingItem.price + newItem.price;
       }
     }
-
-    setCart([...cart]);
-    setTotalPrice(cart.reduce((acc, item) => acc + Number(item.price), 0));
-    setTotalQuantity(cart.reduce((acc, item) => acc + item.quantity, 0));
   };
 
   const toggleCartItem = (item) => {
